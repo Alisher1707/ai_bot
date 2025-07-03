@@ -1,0 +1,130 @@
+[
+  {
+    "id": "0ukjv3sh",
+    "title": "salom",
+    "messages": [
+      {
+        "role": "user",
+        "content": "salom",
+        "timestamp": "2025-07-03T06:30:26.682Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Salom!  (Hello!) How can I help you today?",
+        "timestamp": "2025-07-03T06:30:26.682Z"
+      }
+    ],
+    "createdAt": "2025-07-03T06:30:26.682Z"
+  },
+  {
+    "id": "2z3a7q1t",
+    "title": "menga matematika boyicha yorda...",
+    "messages": [
+      {
+        "role": "user",
+        "content": "menga matematika boyicha yordam berolasanmi",
+        "timestamp": "2025-07-03T06:34:50.504Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Ha, matematika bo'yicha yordam berishim mumkin.  Lekin, menga qanday yordam kerakligini aniqroq aytib berishingiz kerak.  Masalan:\n\n* **Qaysi mavzu bo'yicha yordam kerak?** (masalan, algebra, geometriya, trigonometriya, hisoblash, statistika va boshqalar)\n* **Qanday turdagi yordam kerak?** (masalan, muammoni yechish, tushunchalarni tushuntirish, formulalarni eslatish, uy vazifasini tekshirish va boshqalar)\n* **Konkret misol bering.**  Muammoning matnini yoki rasmini berishingiz mumkin.\n\nBatafsil ma'lumot bersangiz, sizga yanada samaraliroq yordam bera olaman.",
+        "timestamp": "2025-07-03T06:34:50.504Z"
+      },
+      {
+        "role": "user",
+        "content": "algebra boyicha",
+        "timestamp": "2025-07-03T06:35:16.049Z"
+      },
+      {
+        "role": "assistant",
+        "content": "\"Algebra boyicha\" appears to be a phrase in Russian meaning \"regarding algebra\" or \"about algebra\".  To help me understand what you need, please tell me more about what you want to know about algebra.  For example, are you looking for:\n\n* **Specific algebra topics?** (e.g., solving equations, factoring, graphing, inequalities, polynomials, matrices, etc.)\n* **Help with a specific problem?** (Please provide the problem.)\n* **Resources to learn algebra?** (e.g., websites, textbooks, videos)\n* **The history of algebra?**\n* **Something else entirely?**\n\nThe more information you give me, the better I can assist you.",
+        "timestamp": "2025-07-03T06:35:16.050Z"
+      }
+    ],
+    "createdAt": "2025-07-03T06:34:50.504Z"
+  },
+  {
+    "id": "doxy9pbj",
+    "title": "salom",
+    "messages": [
+      {
+        "role": "user",
+        "content": "salom",
+        "timestamp": "2025-07-03T06:40:56.377Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Salom!  (Hello!) How can I help you today?",
+        "timestamp": "2025-07-03T06:40:56.377Z"
+      },
+      {
+        "role": "user",
+        "content": "mening ismim Alisher",
+        "timestamp": "2025-07-03T06:41:23.992Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Salom, Alisher!  (Hello, Alisher!)",
+        "timestamp": "2025-07-03T06:41:23.992Z"
+      },
+      {
+        "role": "user",
+        "content": "meni ismim nima",
+        "timestamp": "2025-07-03T06:41:32.779Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Menim adım yo'q. Men katta til modeliman.",
+        "timestamp": "2025-07-03T06:41:32.779Z"
+      }
+    ],
+    "createdAt": "2025-07-03T06:40:56.377Z"
+  },
+  {
+    "id": "2mzyxyln",
+    "title": "salom",
+    "messages": [
+      {
+        "role": "user",
+        "content": "salom",
+        "timestamp": "2025-07-03T06:52:42.421Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Salom!  (Hello!) How can I help you today?",
+        "timestamp": "2025-07-03T06:52:42.421Z"
+      },
+      {
+        "role": "user",
+        "content": "maning ismim ali",
+        "timestamp": "2025-07-03T06:52:54.325Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Xursandmanman, Ali!  (Pleased to meet you, Ali!)",
+        "timestamp": "2025-07-03T06:52:54.326Z"
+      },
+      {
+        "role": "user",
+        "content": "ismim nma ?",
+        "timestamp": "2025-07-03T06:53:05.577Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Mening ismim yo'q. Men katta til modeliman. (I don't have a name. I am a large language model.)",
+        "timestamp": "2025-07-03T06:53:05.577Z"
+      },
+      {
+        "role": "user",
+        "content": "maning ismim nma",
+        "timestamp": "2025-07-03T06:53:22.987Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Siz aytganingizdek, sizning ismingiz Ali.",
+        "timestamp": "2025-07-03T06:53:22.987Z"
+      }
+    ],
+    "createdAt": "2025-07-03T06:52:42.421Z"
+  }
+]

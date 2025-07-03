@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Claude AI</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="icon"></div>
+            <h1>Claude</h1>
+        </div>
+        
+        <button class="new-chat-btn">New chat</button>
+        
+        <div class="nav-section">
+            <div class="nav-item">Chats</div>
+            <div class="nav-item">Artifacts</div>
+        </div>
+        
+        <div class="recents-section">
+            <div class="recents-title">Recents</div>
+        </div>
+        
+        <div class="sidebar-footer">
+            Free plan
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="top-bar">
+            <div class="plan-info">
+                Free plan • <span class="upgrade">Upgrade</span>
+            </div>
+        </div>
+        
+        <div class="chat-area">
+            <div class="messages-container">
+                <div class="messages">
+                    <ul></ul>
+                </div>
+                <div class="loading"></div>
+            </div>
+            
+            <div class="empty-state">
+                <div class="greeting">
+                    <div class="greeting-icon">✨</div>
+                    <h2>Good Day</h2>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn write">Write</button>
+                    <button class="action-btn learn">Learn</button>
+                    <button class="action-btn code">Code</button>
+                    <button class="action-btn life">Life stuff</button>
+                    <button class="action-btn choice">Claude's choice</button>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <textarea class="chat-input" placeholder="How can I help you today?"></textarea>
+                <div class="input-actions">
+                    <button class="input-btn">+</button>
+                    <select class="ai-selector">
+                        <option>Claude</option>
+                        <option>Grok</option>
+                    </select>
+                    <button class="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>
