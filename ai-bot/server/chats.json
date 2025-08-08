@@ -17,114 +17,77 @@
     "createdAt": "2025-07-03T06:30:26.682Z"
   },
   {
-    "id": "2z3a7q1t",
+    "id": "gmkdryq7",
     "title": "menga matematika boyicha yorda...",
     "messages": [
       {
         "role": "user",
-        "content": "menga matematika boyicha yordam berolasanmi",
-        "timestamp": "2025-07-03T06:34:50.504Z"
+        "content": "menga matematika boyicha yordam kerak",
+        "timestamp": "2025-07-07T06:12:04.104Z"
       },
       {
         "role": "assistant",
-        "content": "Ha, matematika bo'yicha yordam berishim mumkin.  Lekin, menga qanday yordam kerakligini aniqroq aytib berishingiz kerak.  Masalan:\n\n* **Qaysi mavzu bo'yicha yordam kerak?** (masalan, algebra, geometriya, trigonometriya, hisoblash, statistika va boshqalar)\n* **Qanday turdagi yordam kerak?** (masalan, muammoni yechish, tushunchalarni tushuntirish, formulalarni eslatish, uy vazifasini tekshirish va boshqalar)\n* **Konkret misol bering.**  Muammoning matnini yoki rasmini berishingiz mumkin.\n\nBatafsil ma'lumot bersangiz, sizga yanada samaraliroq yordam bera olaman.",
-        "timestamp": "2025-07-03T06:34:50.504Z"
+        "content": "Matematika bo'yicha qanday yordamga muhtojsiz?  Iltimos, menga quyidagilarni aytib bering:\n\n* **Qaysi mavzu bo'yicha yordam kerak?** (masalan, algebra, geometriya, trigonometriya, hisoblash, statistika va boshqalar)\n* **Qanday turdagi yordam kerak?** (masalan, ma'lum bir masalani yechishda yordam, tushunchalarni tushunishda yordam, formulalarni eslab qolishda yordam, uy vazifasini bajarishda yordam va boshqalar)\n* **Qanday masalani yechishga harakat qilayapsiz?** (agar masalani berish mumkin bo'lsa)\n\nBatafsil ma'lumot bersangiz, sizga aniqroq va samaraliroq yordam berishim mumkin.",
+        "timestamp": "2025-07-07T06:12:04.104Z"
       },
       {
         "role": "user",
-        "content": "algebra boyicha",
-        "timestamp": "2025-07-03T06:35:16.049Z"
+        "content": "misollar yechishim kerak",
+        "timestamp": "2025-07-07T06:12:23.568Z"
       },
       {
         "role": "assistant",
-        "content": "\"Algebra boyicha\" appears to be a phrase in Russian meaning \"regarding algebra\" or \"about algebra\".  To help me understand what you need, please tell me more about what you want to know about algebra.  For example, are you looking for:\n\n* **Specific algebra topics?** (e.g., solving equations, factoring, graphing, inequalities, polynomials, matrices, etc.)\n* **Help with a specific problem?** (Please provide the problem.)\n* **Resources to learn algebra?** (e.g., websites, textbooks, videos)\n* **The history of algebra?**\n* **Something else entirely?**\n\nThe more information you give me, the better I can assist you.",
-        "timestamp": "2025-07-03T06:35:16.050Z"
+        "content": "Qaysi mavzu bo'yicha misollar yechishingiz kerak?  Mavzu va misollarni bering, men sizga yordam berishga harakat qilaman.  Imkon qadar batafsilroq ma'lumot bering.  Masalan, agar geometriya bo'lsa, qanday shakl haqida gap ketayotganini ayting. Agar algebra bo'lsa, tenglamani yozib bering.",
+        "timestamp": "2025-07-07T06:12:23.569Z"
+      },
+      {
+        "role": "user",
+        "content": "2+3+4+5+6+*2-15",
+        "timestamp": "2025-07-07T06:12:37.753Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Keling, bu ifodani bosqichma-bosqich hisoblaymiz:\n\n1. **Qo'shish:** 2 + 3 + 4 + 5 + 6 = 20\n\n2. **Ko'paytirish:** 20 * 2 = 40\n\n3. **Ayirish:** 40 - 15 = 25\n\nDemak, javob **25** ga teng.",
+        "timestamp": "2025-07-07T06:12:37.753Z"
       }
     ],
-    "createdAt": "2025-07-03T06:34:50.504Z"
+    "createdAt": "2025-07-07T06:12:04.104Z"
   },
   {
-    "id": "doxy9pbj",
-    "title": "salom",
+    "id": "p8jo1hhm",
+    "title": "menga dasturlash haqida koproq...",
     "messages": [
       {
         "role": "user",
-        "content": "salom",
-        "timestamp": "2025-07-03T06:40:56.377Z"
+        "content": "menga dasturlash haqida koproq malumot ber",
+        "timestamp": "2025-08-04T15:50:50.222Z"
       },
       {
         "role": "assistant",
-        "content": "Salom!  (Hello!) How can I help you today?",
-        "timestamp": "2025-07-03T06:40:56.377Z"
+        "content": "Dasturlash - bu kompyuterlarga nima qilishni aytish jarayonidir.  Bu jarayon inson tushunadigan tilni kompyuter tushunadigan tilga (mashina tiliga) tarjima qilishni o'z ichiga oladi.  Dasturlash tillari turli xil murakkablik darajasiga ega bo'lib, ularning har biri o'ziga xos maqsadlar uchun mo'ljallangan.\n\nDasturlash haqida batafsil ma'lumot quyidagilarni o'z ichiga oladi:\n\n**1. Dasturlash tillari:**\n\n* **Yuqori darajadagi tillar:**  Inson tiliga yaqinroq bo'lgan tillar.  Ularni o'rganish va yozish osonroq, lekin kompilyator yoki interpreter yordamida mashina tiliga tarjima qilinishi kerak.  Misol uchun: Python, Java, C#, JavaScript, C++, PHP, Ruby, Go, Swift va boshqalar.  Har bir til o'ziga xos xususiyatlarga ega va turli xil loyihalar uchun mos keladi.  Masalan, Python ma'lumotlarni tahlil qilish va mashinani o'rgatishda, Java katta korporativ dasturlarni yaratishda, JavaScript veb-saytlarni yaratishda ishlatiladi.\n\n* **Past darajadagi tillar:** Mashina tiliga yaqinroq tillar.  Ularni yozish qiyinroq, lekin tezroq ishlaydi.  Misol uchun: Assembly language.\n\n**2. Dasturlash turlari:**\n\n* **Veb-dasturlash:** Veb-saytlar va veb-ilovalar yaratish.  Bu sohada HTML, CSS, JavaScript, Python (Django, Flask), PHP, Ruby on Rails, Node.js va boshqa tillar ishlatiladi.\n\n* **Mobil dasturlash:** Mobil qurilmalar uchun ilovalar yaratish.  Bu sohada Java (Android), Kotlin (Android), Swift (iOS), Objective-C (iOS), React Native, Flutter va boshqa texnologiyalar ishlatiladi.\n\n* **Desktop dasturlash:** Kompyuterlar uchun dasturlar yaratish.  Bu sohada Java, C++, C#, Python,  va boshqa tillar ishlatiladi.\n\n* **O'yinlarni dasturlash:** Kompyuter va mobil o'yinlar yaratish.  Bu sohada C++, C#, Java, Lua, Unity, Unreal Engine va boshqa texnologiyalar ishlatiladi.\n\n* **Ma'lumotlarni tahlil qilish va mashinani o'rgatish:** Katta ma'lumotlarni tahlil qilish va mashinani o'rgatish algoritmlarini yaratish.  Bu sohada Python (Pandas, NumPy, Scikit-learn), R, Java, Scala va boshqa tillar ishlatiladi.\n\n* **Sistemalarni dasturlash:** Operatsion tizimlar va boshqa tizim dasturlarini yaratish.  Bu sohada C, C++, Assembly language keng qo'llaniladi.\n\n\n**3. Dasturlash jarayoni:**\n\n* **Muammoni tahlil qilish:** Muammoning nima ekanligini aniqlash va uni qanday hal qilishni rejalashtirish.\n\n* **Algoritmlarni yaratish:** Muammoni hal qilish uchun qadamlarni belgilash.\n\n* **Kod yozish:** Tanlangan dasturlash tilida algoritmlarni kodga aylantirish.\n\n* **Kodni sinovdan o'tkazish va xatolarni tuzatish (debugging):** Kodni tekshirish va xatolarni topib tuzatish.\n\n* **Kodni optimallashtirish:** Kodni tezroq va samaraliroq ishlashi uchun optimallashtirish.\n\n\n**4. Dasturlashni o'rganish:**\n\nDasturlashni o'rganish uchun ko'plab resurslar mavjud:\n\n* **Onlayn kurslar:** Coursera, edX, Udemy, Codecademy va boshqalar.\n* **Kitoblar:** Dasturlash tillari bo'yicha ko'plab kitoblar mavjud.\n* **Onlayn hujjatlar:** Dasturlash tillarining rasmiy hujjatlari.\n* **Forumlar va jamoalar:** Stack Overflow, GitHub va boshqalar.\n\n\nDasturlashni o'rganish vaqt va kuch talab qiladigan jarayon, lekin qiziqarli va foydali.  Qaysi tilni o'rganishni boshlashni tanlash sizning maqsadingizga bog'liq.  Boshlash uchun Python yoki JavaScript kabi o'rganishga oson tillarni tanlash tavsiya etiladi.",
+        "timestamp": "2025-08-04T15:50:50.222Z"
       },
       {
         "role": "user",
-        "content": "mening ismim Alisher",
-        "timestamp": "2025-07-03T06:41:23.992Z"
+        "content": "yaxshi",
+        "timestamp": "2025-08-04T15:51:02.116Z"
       },
       {
         "role": "assistant",
-        "content": "Salom, Alisher!  (Hello, Alisher!)",
-        "timestamp": "2025-07-03T06:41:23.992Z"
+        "content": "Zo'r!  Yana biror savolingiz bo'lsa, bemalol so'rang.",
+        "timestamp": "2025-08-04T15:51:02.116Z"
       },
       {
         "role": "user",
-        "content": "meni ismim nima",
-        "timestamp": "2025-07-03T06:41:32.779Z"
+        "content": "rahmat",
+        "timestamp": "2025-08-04T15:51:07.631Z"
       },
       {
         "role": "assistant",
-        "content": "Menim adım yo'q. Men katta til modeliman.",
-        "timestamp": "2025-07-03T06:41:32.779Z"
+        "content": "Iltimos!  Yana biror narsada yordamim kerak bo'lsa, ayting.",
+        "timestamp": "2025-08-04T15:51:07.631Z"
       }
     ],
-    "createdAt": "2025-07-03T06:40:56.377Z"
-  },
-  {
-    "id": "2mzyxyln",
-    "title": "salom",
-    "messages": [
-      {
-        "role": "user",
-        "content": "salom",
-        "timestamp": "2025-07-03T06:52:42.421Z"
-      },
-      {
-        "role": "assistant",
-        "content": "Salom!  (Hello!) How can I help you today?",
-        "timestamp": "2025-07-03T06:52:42.421Z"
-      },
-      {
-        "role": "user",
-        "content": "maning ismim ali",
-        "timestamp": "2025-07-03T06:52:54.325Z"
-      },
-      {
-        "role": "assistant",
-        "content": "Xursandmanman, Ali!  (Pleased to meet you, Ali!)",
-        "timestamp": "2025-07-03T06:52:54.326Z"
-      },
-      {
-        "role": "user",
-        "content": "ismim nma ?",
-        "timestamp": "2025-07-03T06:53:05.577Z"
-      },
-      {
-        "role": "assistant",
-        "content": "Mening ismim yo'q. Men katta til modeliman. (I don't have a name. I am a large language model.)",
-        "timestamp": "2025-07-03T06:53:05.577Z"
-      },
-      {
-        "role": "user",
-        "content": "maning ismim nma",
-        "timestamp": "2025-07-03T06:53:22.987Z"
-      },
-      {
-        "role": "assistant",
-        "content": "Siz aytganingizdek, sizning ismingiz Ali.",
-        "timestamp": "2025-07-03T06:53:22.987Z"
-      }
-    ],
-    "createdAt": "2025-07-03T06:52:42.421Z"
+    "createdAt": "2025-08-04T15:50:50.222Z"
   }
 ]

@@ -1,18 +1,86 @@
 const inputElement = document.querySelector(".chat-input")
 const sendElement = document.querySelector(".send-btn")
 const messagesElement = document.querySelector(".messages ul")
+const messagesContainer = document.querySelector(".messages-container")
 const loadingElement = document.querySelector(".loading")
 const chatArea = document.querySelector(".chat-area")
 const newChatBtn = document.querySelector(".new-chat-btn")
 const actionButtons = document.querySelectorAll(".action-btn")
 const aiSelector = document.querySelector(".ai-selector")
 const recentsSection = document.querySelector(".recents-section")
+const sidebar = document.querySelector(".sidebar")
+const sidebarToggle = document.getElementById("sidebarToggle")
+const resizeHandle = document.getElementById("resizeHandle")
 
 let isLoading = false
 let messageHistory = []
 let currentChatId = null
+let isSidebarCollapsed = false
+let isResizing = false
+let sidebarWidth = 280
 
 const API_BASE_URL = window.location.origin
+
+function toggleSidebar() {
+    isSidebarCollapsed = !isSidebarCollapsed
+    sidebar.classList.toggle('collapsed', isSidebarCollapsed)
+    sidebarToggle.classList.toggle('active', isSidebarCollapsed)
+    document.body.classList.toggle('sidebar-collapsed', isSidebarCollapsed)
+    
+    // Sidebar width o'rnatish
+    if (isSidebarCollapsed) {
+        sidebar.style.width = '50px'
+    } else {
+        sidebar.style.width = sidebarWidth + 'px'
+    }
+    
+    // LocalStorage-da holatni saqlash
+    localStorage.setItem('sidebarCollapsed', isSidebarCollapsed)
+}
+
+function setSidebarWidth(width) {
+    if (isSidebarCollapsed) return // Collapsed holatda width o'zgarmasin
+    
+    sidebarWidth = Math.max(200, Math.min(400, width))
+    sidebar.style.width = sidebarWidth + 'px'
+    
+    // Grid template ni yangilash
+    document.body.style.gridTemplateColumns = `${sidebarWidth}px 1fr`
+    
+    localStorage.setItem('sidebarWidth', sidebarWidth)
+}
+
+function startResize(e) {
+    if (isSidebarCollapsed || window.innerWidth <= 768) return
+    
+    isResizing = true
+    document.body.style.cursor = 'col-resize'
+    document.body.style.userSelect = 'none'
+    sidebar.style.transition = 'none'
+    
+    document.addEventListener('mousemove', doResize)
+    document.addEventListener('mouseup', stopResize)
+    e.preventDefault()
+}
+
+function doResize(e) {
+    if (!isResizing) return
+    
+    const newWidth = e.clientX
+    setSidebarWidth(newWidth)
+}
+
+function stopResize() {
+    if (!isResizing) return
+    
+    isResizing = false
+    document.body.style.cursor = ''
+    document.body.style.userSelect = ''
+    sidebar.style.transition = 'transform 0.3s ease'
+    
+    document.removeEventListener('mousemove', doResize)
+    document.removeEventListener('mouseup', stopResize)
+}
 
 async function sendMessage(message) {
     if (!message.trim() || isLoading) return
@@ -162,9 +230,12 @@ function addMessage(message, type, isError = false) {
     
     messagesElement.appendChild(liElement)
     
+    // Faqat messages konteynerini scroll qilish
     setTimeout(() => {
-        messagesElement.scrollTop = messagesElement.scrollHeight
-    }, 100)
+        if (messagesContainer) {
+            messagesContainer.scrollTop = messagesContainer.scrollHeight
+        }
+    }, 50)
 }
 
 function setLoading(loading) {
@@ -287,6 +358,13 @@ async function loadChat(chatId) {
                 addMessage(msg.content, msg.role === 'user' ? 'user' : 'ai')
             })
             
+            // Xabarlar yuklanganidan keyin pastga scroll qilish
+            setTimeout(() => {
+                if (messagesContainer) {
+                    messagesContainer.scrollTop = messagesContainer.scrollHeight
+                }
+            }, 100)
+            
             chatArea.classList.add('chat-started')
             inputElement.focus()
             await loadChatHistory()
@@ -408,6 +486,27 @@ aiSelector.addEventListener('change', () => {
 })
 
 window.addEventListener('load', async () => {
+    // Sidebar holatini qayta tiklash
+    const savedSidebarState = localStorage.getItem('sidebarCollapsed')
+    const savedSidebarWidth = localStorage.getItem('sidebarWidth')
+    
+    if (savedSidebarWidth) {
+        setSidebarWidth(parseInt(savedSidebarWidth))
+    } else {
+        // Default grid template o'rnatish
+        document.body.style.gridTemplateColumns = `${sidebarWidth}px 1fr`
+    }
+    
+    if (savedSidebarState === 'true') {
+        isSidebarCollapsed = true
+        sidebar.classList.add('collapsed')
+        sidebarToggle.classList.add('active')
+        document.body.classList.add('sidebar-collapsed')
+        
+        // Sidebar width o'rnatish
+        sidebar.style.width = '50px'
+    }
+    
     inputElement.focus()
     await checkServerConnection()
     await loadChatHistory()
@@ -423,10 +522,18 @@ document.querySelector('.upgrade').addEventListener('click', () => {
     alert('Upgrade funksiyasi keyinroq qo\'shiladi')
 })
 
+sidebarToggle.addEventListener('click', toggleSidebar)
+resizeHandle.addEventListener('mousedown', startResize)
+
 document.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
         e.preventDefault()
         sendMessage(inputElement.value)
+    }
+    
+    if ((e.ctrlKey || e.metaKey) && e.key === 'b') {
+        e.preventDefault()
+        toggleSidebar()
     }
     
     if (e.key === 'Escape') {
